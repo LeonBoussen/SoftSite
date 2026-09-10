@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg-light: #fff8f1;
+  --bg-dark: #0b0b0d;
+  --text-light: #151515;
+  --text-dark: #f7f5f2;
+  --orange-1: #ff8a1f;
+  --orange-2: #ffb14a;
+  --orange-3: #ff6a00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-1.5%, 1%, 0) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes grainShift {
+  0% {
+    transform: translate3d(-2%, -2%, 0);
+  }
+  25% {
+    transform: translate3d(1%, -1%, 0);
+  }
+  50% {
+    transform: translate3d(-1%, 2%, 0);
+  }
+  75% {
+    transform: translate3d(2%, 1%, 0);
+  }
+  100% {
+    transform: translate3d(-2%, -2%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .noise,
+  [style*="drift"],
+  [style*="grainShift"] {
+    animation: none !important;
+  }
+}
+
+.noise {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.08) 0.6px, transparent 0.7px),
+    radial-gradient(rgba(255, 138, 31, 0.06) 0.6px, transparent 0.8px);
+  background-position: 0 0, 14px 14px;
+  background-size: 18px 18px, 22px 22px;
+}
+
+/* Scrolled navbar: plain rgba() so the background also works on browsers
+   without color-mix(); the blur is prefixed for older (iOS) Safari and is
+   purely decorative — the rgba tint keeps the bar readable without it. */
+.nav-glass {
+  background-color: rgba(255, 248, 241, 0.85);
+  -webkit-backdrop-filter: blur(12px) saturate(1.5);
+  backdrop-filter: blur(12px) saturate(1.5);
+}
+
+.dark .nav-glass {
+  background-color: rgba(11, 11, 13, 0.85);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 138, 31, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 138, 31, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.25), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.25), transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange-1);
+  outline-offset: 2px;
+  border-radius: 6px;
+}

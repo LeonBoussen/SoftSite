@@ -1,0 +1,107 @@
+{
+  "site": {
+    "name": "SoftSite",
+    "founderName": "Leon Boussen",
+    "location": "Nederland · volledig remote",
+    "email": "hello@softsite.nl",
+    "phone": "",
+    "kvk": "",
+    "btw": ""
+  },
+  "hero": {
+    "eyebrow": "Websites · Hosting · Websecurity",
+    "lines": [
+      "We bouwen digitale producten exact naar jouw wens.",
+      "Van eerste idee tot een website die gewoon werkt.",
+      "Snel, veilig en helder — zonder technische zorgen.",
+      "Jouw website, hosting en beveiliging onder één dak."
+    ],
+    "subtitle": "SoftSite bouwt, host en beveiligt websites voor ondernemers die geen tijd willen verliezen aan techniek. Eén vast aanspreekpunt, heldere prijzen en geen verrassingen.",
+    "intervalMs": 3800,
+    "transitionMs": 500,
+    "primaryCta": { "label": "Plan een gratis kennismaking", "href": "#contact" },
+    "secondaryCta": { "label": "Bekijk onze diensten", "href": "#diensten" }
+  },
+  "services": [
+    {
+      "id": "website",
+      "icon": "globe",
+      "title": "Websites",
+      "description": "Een website die er goed uitziet én gevonden wordt. Van ontwerp tot lancering, volledig ontzorgd.",
+      "points": [
+        "Ontwerp en bouw op maat",
+        "Snel, toegankelijk en mobielvriendelijk",
+        "SEO en analytics vanaf dag één"
+      ]
+    },
+    {
+      "id": "hosting",
+      "icon": "server",
+      "title": "Hosting",
+      "description": "Managed hosting op Nederlandse servers. Jouw site blijft online, snel en up-to-date — zonder dat je ernaar omkijkt.",
+      "points": [
+        "Onderhoud, updates en backups",
+        "SSL en monitoring inbegrepen",
+        "Eén aanspreekpunt bij storingen"
+      ]
+    },
+    {
+      "id": "security",
+      "icon": "shield",
+      "title": "Websecurity",
+      "description": "Praktische beveiliging voor je website en omgeving. Van security-audit tot hardening, uitgelegd in gewone taal.",
+      "points": [
+        "Security-audit met helder rapport",
+        "Hardening en veilige configuratie",
+        "Advies zonder jargon"
+      ]
+    }
+  ],
+  "process": {
+    "title": "Een helder pad, van start tot oplevering.",
+    "steps": [
+      {
+        "title": "Kennismaken",
+        "description": "Een gratis gesprek van 30 minuten. We bespreken je doelen en wat je precies nodig hebt."
+      },
+      {
+        "title": "Voorstel",
+        "description": "Binnen één werkdag ontvang je een helder voorstel met vaste prijs en planning."
+      },
+      {
+        "title": "Bouwen",
+        "description": "We bouwen en testen zorgvuldig, met tussentijdse updates zodat je altijd weet waar je staat."
+      },
+      {
+        "title": "Lancering en beheer",
+        "description": "Na de lancering blijven we betrokken: updates, monitoring en onderhoud."
+      }
+    ]
+  },
+  "about": {
+    "title": "Over SoftSite",
+    "paragraphs": [
+      "SoftSite is een jong bureau van Leon Boussen. We bouwen, hosten en beveiligen websites voor ondernemers die kwaliteit willen zonder technisch gedoe.",
+      "We zijn bewust klein en persoonlijk: je spreekt altijd dezelfde persoon, van het eerste gesprek tot de oplevering en daarna."
+    ],
+    "points": [
+      {
+        "title": "Eén vast aanspreekpunt",
+        "description": "Geen accountmanagers of wisselende teams. Je werkt direct met Leon."
+      },
+      {
+        "title": "Heldere prijzen",
+        "description": "Vaste prijzen en duidelijke afspraken. Je weet vooraf waar je aan toe bent."
+      },
+      {
+        "title": "Gebouwd om te blijven staan",
+        "description": "Onderhoudbaar, veilig en klaar om met je bedrijf mee te groeien."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Laten we kennismaken",
+    "subtitle": "Plan een gratis gesprek van 30 minuten. Vertel kort waar je mee bezig bent, en we nemen binnen één werkdag contact op.",
+    "hours": "Ma–vr, 09:00–17:30"
+  }
+}

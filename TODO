@@ -1,0 +1,31 @@
+# SoftSite — status & afspraken
+
+## Gereed (deze ronde)
+- [x] Hero-tekst roteert (4 zinnen, fade + slide, stopt bij reduced-motion)
+- [x] Navigatie opgelost: één strakke one-pager (Diensten / Werkwijze / Over / Contact scrollen soepel)
+- [x] Mouse-glow glitch opgelost: glow start onzichtbaar op het midden en komt sácht op na laden
+- [x] Webshop, producten, winkelmand en checkout volledig verwijderd (focus: website, hosting, websecurity)
+- [x] Verzonnen cijfers/reviews/projecten vervangen door eerlijke copy
+- [x] Alle emoji's vervangen door inline SVG-iconen
+- [x] Eigen backend (Node + Express + SQLite) met content, afspraakverzoeken en auth
+- [x] Admin-portal op /admin: inloggen, aanvragen inzien/afhandelen, alle teksten & listings bewerken
+
+## Lokaal draaien
+```
+npm install          # eenmalig
+npm run dev:all      # Vite (5173) + API (3001)
+# of productie-achtig:
+npm run build
+npm start            # dient de gebouwde site op http://localhost:3001
+```
+
+## Admin
+- URL: http://localhost:3001/admin
+- Standaard login: `LeonB` / `standaard_wachtwoord`
+- Wijzigen via omgevingsvariabelen: `ADMIN_USER` en `ADMIN_PASSWORD` (daarna server herstarten)
+- Content staat in `server/data.sqlite` (wordt automatisch aangemaakt; staat in .gitignore)
+
+## Nog open (later)
+- [ ] Echte contactgegevens invullen (telefoon, e-mail, KvK, BTW) via /admin → Bedrijf
+- [ ] Eventueel e-mailnotificatie koppelen zodat aanvragen ook per mail binnenkomen
+- [ ] Echte domeinnaam en hosting/VPS koppelen
