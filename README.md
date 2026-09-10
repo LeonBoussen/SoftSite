@@ -20,14 +20,9 @@ and documentation.
 
 ## Screenshots
 
-*Replace the placeholders with real screenshots (see below).*
-
 | Home (light) | Home (dark) | Admin portal |
 | :---: | :---: | :---: |
 | ![Home light](docs/screenshots/home-light.png) | ![Home dark](docs/screenshots/home-dark.png) | ![Admin portal](docs/screenshots/admin.png) |
-
-To add screenshots: create `docs/screenshots/`, drop in `home-light.png`,
-`home-dark.png` and `admin.png`, and remove this note.
 
 ---
 
